@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<h3>Array of strings</h3>
+<ui-select multiple ng-model="ctrl.multipleDemo.colors" theme="bootstrap4-1" ng-disabled="ctrl.disabled" close-on-select="false" title="Choose a color">
+    <ui-select-match placeholder="Select colors...">{{$item}}</ui-select-match>
+    <ui-select-choices repeat="color in ctrl.availableColors | filter:$select.search">
+        {{color}}
+    </ui-select-choices>
+</ui-select>
+<p>Selected: {{ctrl.multipleDemo.colors}}</p>
+<hr>
+<h3>Array of objects (sorting enabled)</h3>
+<ui-select multiple ng-model="ctrl.multipleDemo.selectedPeople" theme="bootstrap4-1" ng-disabled="ctrl.disabled" sortable="true" close-on-select="false" style="width: 800px;">
+    <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+    <ui-select-choices repeat="person in ctrl.people | propsFilter: {name: $select.search, age: $select.search}">
+        <div ng-bind-html="person.name | highlight: $select.search"></div>
+        <small>
+            email: {{person.email}}
+            age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+        </small>
+    </ui-select-choices>
+</ui-select>
+<p>Selected: {{ctrl.multipleDemo.selectedPeople}}</p>
