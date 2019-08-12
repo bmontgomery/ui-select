@@ -1,11 +1,12 @@
-﻿  <button class="btn btn-default btn-xs" ng-click="ctrl.enable()">Enable ui-select</button>
+﻿  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+  <button class="btn btn-default btn-xs" ng-click="ctrl.enable()">Enable ui-select</button>
   <button class="btn btn-default btn-xs" ng-click="ctrl.disable()">Disable ui-select</button>
   <button class="btn btn-default btn-xs" ng-click="ctrl.clear()">Clear ng-model</button>
 
   <h3>Select2 theme</h3>
   <h4>Single property binding with async data</h4>
 
-  <p>Selected: <code> {{ctrl.personAsync.selected | json }}</code></p>  
+  <p>Selected: <code> {{ctrl.personAsync.selected | json }}</code></p>
   <p>List Count: <code>{{ (ctrl.peopleAsync || []).length }}</code></p>
 
   <ui-select ng-model="ctrl.personAsync.selected" theme="select2" ng-disabled="ctrl.disabled" style="min-width: 300px;" title="Single property binding with async data">
