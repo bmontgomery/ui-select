@@ -1,10 +1,12 @@
-<div class="ui-select-match" ng-hide="$select.open && $select.searchEnabled" ng-disabled="$select.disabled" ng-class="{'btn-default-focus':$select.focus}">
+<div class="ui-select-match" ng-hide="$select.open && $select.searchEnabled" ng-disabled="$select.disabled"
+     ng-class="{'btn-default-focus':$select.focus}">
   <span tabindex="-1"
-        class="btn btn-light border border-dark dropdown-toggle form-control ui-select-toggle"
+        role="button"
+        class="btn btn-light border dropdown-toggle form-control ui-select-toggle"
         aria-label="{{ $select.baseTitle }} activate"
         ng-disabled="$select.disabled"
         ng-click="$select.activate()"
-        style="outline: 0;">
+        style="outline: 0; background-color: white">
     <span ng-show="$select.isEmpty()" class="ui-select-placeholder pull-left text-muted"><span>{{$select.placeholder}}</span></span>
     <span ng-hide="$select.isEmpty()" class="ui-select-match-text pull-left" ng-class="{'ui-select-allow-clear': $select.allowClear && !$select.isEmpty()}" ng-transclude=""></span>
     <a ng-show="$select.allowClear && !$select.isEmpty() && ($select.disabled !== true)"
