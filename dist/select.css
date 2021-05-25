@@ -1,7 +1,7 @@
 /*!
  * ui-select-bs4
  * https://github.com/bmontgomery/ui-select
- * Version: 0.19.8 - 2019-08-12T21:29:30.366Z
+ * Version: 0.19.8 - 2021-05-25T18:58:03.776Z
  * License: MIT
  */
 
@@ -256,7 +256,7 @@ body > .ui-select-bootstrap.open {
     right: 100%;
     height: 100%;
     margin-right: 2px;
-    border-left: 1px solid #428bca;
+    border-left: 1px solid #3b7db6;
 }
 
 .ui-select-multiple:hover .ui-select-match-item.dropping-after:after {
@@ -266,7 +266,7 @@ body > .ui-select-bootstrap.open {
     left: 100%;
     height: 100%;
     margin-left: 2px;
-    border-right: 1px solid #428bca;
+    border-right: 1px solid #3b7db6;
 }
 
 .ui-select-bootstrap .ui-select-choices-row>span {
@@ -290,7 +290,7 @@ body > .ui-select-bootstrap.open {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #428bca;
+    background-color: #3b7db6;
 }
 
 .ui-select-bootstrap .ui-select-choices-row.disabled>span,
@@ -444,7 +444,7 @@ body > .ui-select-bootstrap4.open {
     right: 100%;
     height: 100%;
     margin-right: 2px;
-    border-left: 1px solid #428bca;
+    border-left: 1px solid #3b7db6;
 }
 
 .ui-select-multiple:hover .ui-select-match-item.dropping-after:after {
@@ -454,7 +454,7 @@ body > .ui-select-bootstrap4.open {
     left: 100%;
     height: 100%;
     margin-left: 2px;
-    border-right: 1px solid #428bca;
+    border-right: 1px solid #3b7db6;
 }
 
 .ui-select-bootstrap4 .ui-select-choices-row>span {
@@ -478,7 +478,7 @@ body > .ui-select-bootstrap4.open {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #428bca;
+    background-color: #3b7db6;
 }
 
 .ui-select-bootstrap4 .ui-select-choices-row.disabled>span,
